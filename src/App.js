@@ -7,10 +7,6 @@ import StartForm from "./pages/StartForm";
 import Forms from "./pages/Forms";
 import FinishForm from "./pages/FinishForm";
 import Main from "./pages/Main";
-import Urgente from "./pages/Urgente";
-import Directo from "./pages/Directo"
-import Mixto from "./pages/Mixto"
-import MaterialApoyo from "./pages/MaterialApoyo"
 
 function App() {
   return (
@@ -23,13 +19,8 @@ function App() {
           <Route path="/Forms" exact component={Forms} />
           <Route path="/FinishForm" exact component={FinishForm} />
           <Route path="/Main" exact component={Main} />
-          <Route path="/Urgente" exact component={Urgente} />
-          <Route path="/Directo" exact component={Directo} />
-          <Route path="/Mixto" exact component={Mixto} />
-          <Route path="/MaterialApoyo" exact component={MaterialApoyo} />
         </Switch>
       </Router>
-
     </>
   );
 }

@@ -14,6 +14,7 @@ import ModorisForm from "../components/ModorisForm";
 import NseForm from "../components/NseForm";
 
 const Forms = () => {
+  const cache = {};
   const history = useHistory();
 
   const [email, setEmail] = useState("");
@@ -31,7 +32,7 @@ const Forms = () => {
   const [atencion, setAtencion] = useState("");
   const [enfoque, setEnfoque] = useState("");
 
-  const SignInURL = "http://localhost:3000/api/v1/auth/signup";
+  const SignInURL = "http://localhost:3001/api/v1/auth/signup";
   let posted = "";
   let data = "";
 
@@ -103,36 +104,49 @@ const Forms = () => {
       suicide: diagnosticoSuicidio,
       treatment: enfoque,
     });
-    console.table(data);
 
-    axios
-      .post(SignInURL, data, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-      .then((response) => {
-        posted = response.data;
-        console.log(posted);
-        history.push({
-          pathname: '/Directo',
-          search: '?name=sudheer',
-          state: { detail: response.data },
+    console.table(data);
+    
+    if (enfoque !== "") {
+      axios
+        .post(SignInURL, data, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((response) => {
+          posted = response.data;
+          console.log(posted);
+          history.push({
+            pathname: "/FinishForm",
+            state: {
+              email: email,
+              password: password,
+              name: nombre,
+              phone: telefono,
+              birthDate: fechaNacimiento,
+              occupation: ocupacion,
+              NSE: nse,
+              anxiety: diagnosticoAnsiedad,
+              depresion: diagnosticoDepresión,
+              suicide: diagnosticoSuicidio,
+              treatment: enfoque,
+            },
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+          if (error.msg) {
+            posted = error.response.data.errors;
+            console.log("Error1", posted);
+          } else if (error.request) {
+            console.log("Error2".error);
+          } else {
+            console.log("Error3", error.message);
+          }
         });
-        // history.push('/Directo')
-      })
-      .catch(function (error) {
-          console.log('HOLA')
-          console.log(error.msg)
-        if (error.msg) {
-          posted = error.response.data.errors;
-          console.log("Error1", posted);
-        } else if (error.request) {
-          console.log("Error2". error);
-        } else {
-          console.log("Error3", error.message);
-        }
-      });
+    } else {
+    }
   };
 
   useEffect(() => {

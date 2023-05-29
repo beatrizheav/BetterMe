@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import "./StartForm.css";
 
 import Navbar from "../components/Navbar";
-import Input from "../components/Input";
 import Button from "../components/Button";
 
 const StartForm = () => {

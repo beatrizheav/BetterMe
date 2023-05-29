@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import "./LogIn.css";
+
+import swal from 'sweetalert';
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Input from '../components/Input'
-import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
+import "./LogIn.css";
 
 const LogIn = () => {
   const [camposInvalidos, setCamposInvalidos] = useState(false);
@@ -21,6 +23,7 @@ const LogIn = () => {
       setCamposInvalidos(true);
       setMessage('Llena todos los campos para continuar')
     } else {
+      setCamposInvalidos(false);
       let data = JSON.stringify({
         "email": email,
         "password": password
@@ -70,6 +73,13 @@ const LogIn = () => {
         ) {
           // print the exception message from axios response
           console.log(ex.response.data, 'ERROR 2');
+          // swal("Lo siento este usuario no existe", "¿Aún no tienes una cuenta? Registrate!:)")
+          swal( {
+            title: "Lo siento este usuario no existe",
+            text: "¿Aún no tienes una cuenta? Registrate!:)",
+            confirmButtonText: "Okay",
+            className:"swal2-popup"
+          })
         }
       });   
     }

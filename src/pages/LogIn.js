@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Input from '../components/Input'
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const LogIn = () => {
@@ -13,15 +14,12 @@ const LogIn = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [message, setMessage] = useState("");
-
-  // const LogInURL = "http://localhost:3001/api/v1/auth/login";
-  // let posted = "";
-  // let data = "";
+  const history = useHistory();
 
   const handleSubmit = () => {
     if (email === "" || password === "") {
       setCamposInvalidos(true);
-      setMessage("LLena todos los campos para continuar");
+      setMessage('Llena todos los campos para continuar')
     } else {
       let data = JSON.stringify({
         "email": email,
@@ -40,13 +38,40 @@ const LogIn = () => {
       
       axios.request(config)
       .then((response) => {
-        console.log(JSON.stringify(response.data));
+        console.log(JSON.stringify(response.data.userExists.email));
+        history.push({
+          pathname: "/Main",
+          state: {
+            email: response.data.userExists.email,
+            password: response.data.userExists.password,
+            name: response.data.userExists.name,
+            phone: response.data.userExists.phone,
+            birthDate: response.data.userExists.birthDate,
+            occupation: response.data.userExists.occupation,
+            NSE: response.data.userExists.NSE,
+            anxiety: response.data.userExists.anxiety,
+            depresion: response.data.userExists.depresion,
+            suicide: response.data.userExists.suicide,
+            treatment: response.data.userExists.treatment,
+          },
+        });
       })
-      .catch((error) => {
-        console.log(error.message);
-        setCamposInvalidos(true);
-        setMessage(error.message);
-      });      
+      .catch((ex) => {
+        // console.log(error.message);
+        if (ex && ex !== undefined && ex.toString && ex.toString !== undefined) {
+          // print the general exception
+          console.log(ex.toString(), 'ERROR 1');
+        }     
+        if (
+          ex.response &&
+          ex.response !== undefined &&
+          ex.response.data &&
+          ex.response.data !== undefined
+        ) {
+          // print the exception message from axios response
+          console.log(ex.response.data, 'ERROR 2');
+        }
+      });   
     }
   };
 

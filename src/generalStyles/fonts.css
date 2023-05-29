@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Regular;
+    src: url(../../public/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: SemiBold;
+    src: url(../../public/fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(../../public/fonts/OpenSans-Bold.ttf);
+}
+
+
+.Bold25 {
+    font-family: Bold;
+    font-size: 25px;
+}
+
+.SBold13 {
+    font-family: SemiBold;
+    font-size: 13px;
+}
+
+.Regular13 {
+    font-family: Regular;
+    font-size: 13px;
+}

@@ -1,0 +1,144 @@
+{
+    "1": [
+        {
+            "id": 1,
+            "op": "Preescolar/Ninguna",
+            "value": 0
+        },
+        {
+            "id": 2,
+            "op": "Primaria incompleta",
+            "value": 6
+        },
+        {
+            "id": 3,
+            "op": "Primaria completa",
+            "value": 11
+        },
+        {
+            "id": 4,
+            "op": "Secundaria incompleta",
+            "value": 12
+        },
+        {
+            "id": 5,
+            "op": "Secundaria completa",
+            "value": 18
+        },
+        {
+            "id": 6,
+            "op": "Preparatoria incompleta",
+            "value": 23
+        },
+        {
+            "id": 7,
+            "op": "Preparatoria completa",
+            "value": 27
+        },
+        {
+            "id": 8,
+            "op": "Licenciatura incompleta",
+            "value": 36
+        },
+        {
+            "id": 9,
+            "op": "Licenciatura completa",
+            "value": 59
+        },
+        {
+            "id": 10,
+            "op": "Posgrado",
+            "value": 85
+        }
+    ],
+    "2": [
+        {
+            "id": 1,
+            "op": "0",
+            "value": 0
+        },
+        {
+            "id": 2,
+            "op": "1",
+            "value": 24
+        },
+        {
+            "id": 3,
+            "op": "2 o más",
+            "value": 47
+        }
+    ],
+    "3": [
+        {
+            "id": 1,
+            "op": "0",
+            "value": 0
+        },
+        {
+            "id": 2,
+            "op": "1",
+            "value": 22
+        },
+        {
+            "id": 3,
+            "op": "2 o más",
+            "value": 43
+        }
+    ],
+    "4": [
+        {
+            "id": 1,
+            "op": "No tiene",
+            "value": 0
+        },
+        {
+            "id": 2,
+            "op": "Si tiene",
+            "value": 32
+        }
+    ],
+    "5": [
+        {
+            "id": 1,
+            "op": "0",
+            "value": 0
+        },
+        {
+            "id": 2,
+            "op": "1",
+            "value": 15
+        },
+        {
+            "id": 3,
+            "op": "2",
+            "value": 31
+        },
+        {
+            "id": 4,
+            "op": "3",
+            "value": 46
+        },
+        {
+            "id": 5,
+            "op": "4 o más",
+            "value": 61
+        }
+    ],
+    "6" : [
+        {
+            "id": 1,
+            "op": "Si",
+            "value": "Si"
+        },
+        {
+            "id": 2,
+            "op": "No",
+            "value": "No"
+        },
+        {
+            "id": 3,
+            "op": "No frecuentemente",
+            "value": "No frecuentemente"
+        }
+    ]
+}

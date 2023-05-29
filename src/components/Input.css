@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Regular;
+    src: url(../../public/fonts/OpenSans-Regular.ttf);
+}
+
+.R14 {
+    font-family: Regular;
+    font-size: 14px;
+}
+
+.R12 {
+    font-family: Regular;
+    font-size: 12px;
+}
+
+#inputContainer {
+    height: 73;
+    margin-bottom: 15px;
+}
+
+.input {
+    padding-inline: 6px;
+    margin-top: 4px;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.password {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.inputBox {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.passwordIcon {
+    font-size: 20px;
+    color: #5C5C5C;
+    align-self: center;
+}

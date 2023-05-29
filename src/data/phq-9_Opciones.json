@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "op" : "Para nada",
+        "value": 0
+    }, 
+    {
+        "id": 2,
+        "op" : "Menos de la mitad de los días",
+        "value": 1
+    },
+    {
+        "id": 3,
+        "op" : "Más de la mitad de los días",
+        "value": 2
+    },
+    {
+        "id": 4,
+        "op" : "Casí nunca",
+        "value": 3
+    }
+]

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Bold;
+    src: url(../../public/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url(../../public/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../../public/fonts/OpenSans-Regular.ttf);
+}
+
+.B25 {
+    font-family: Bold;
+    font-size: 25px;
+}
+
+.SB25 {
+    font-family: SemiBold;
+    font-size: 25px;
+}
+
+.R14 {
+    font-family: Regular;
+    font-size: 14px;
+}
+
+.R12 {
+    font-family: Regular;
+    font-size: 12px;
+}
+
+
+.signInPage {
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.signInContainer {
+    width: 50%;
+    height: 450px;
+    border-radius: 8px;
+    border-width: 1px;
+    border: 1px solid #B8B6B6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.signIn2 {
+    width: 60%;
+    height: 340px;
+}
+
+.signInPage2 {
+    margin-top: 160px;
+}
+
+#title{
+    padding-bottom: 1%;
+}
+
+#texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#inputs {
+    padding: 2%;
+}
+
+#signIn1Image {
+    width: 150px;
+}
+
+#camposVacios {
+    color: #FF6584;
+    text-align: center;
+    padding: 4px;
+}
+
+@media screen and (max-width: 960px) {
+    .signInContainer {
+        width: 85%;
+    }
+
+    #inputsContainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .signIn2 {
+        height: 500px;
+    }
+}

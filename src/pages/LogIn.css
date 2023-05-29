@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Bold;
+    src: url(../../public/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../../public/fonts/OpenSans-Regular.ttf);
+}
+
+.B35 {
+    font-family: Bold;
+    font-size: 35px;
+}
+
+.B25 {
+    font-family: Bold;
+    font-size: 25px;
+}
+
+.B14 {
+    font-family: Bold;
+    font-size: 14px;
+}
+
+.R14 {
+    font-family: Regular;
+    font-size: 14px;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    padding-block: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#infoContainer {
+    width: 50%;
+    padding-left: 15%;
+}
+
+#titleLogIn {
+    text-align: left;
+}
+
+.inputs {
+    width: 70%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#createAccount {
+    width: 100%;
+}
+
+#paddingCreteAccount {
+    padding: 20px;
+}
+
+#Registrate {
+    color: #8A9E66;
+}
+
+#imageContainer {
+    width: 50%;
+    height: 100%;
+}
+
+#homeImage {
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #infoContainer {
+        width: 70%;
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+
+    #imageContainer {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+    #homeImage {
+        width: 50%;
+    }
+}   

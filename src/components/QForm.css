@@ -1,0 +1,49 @@
+.QFormContainer {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #B8B6B6;
+}
+
+.optionContainer {
+    padding-left: 10px;
+}
+
+#optionText {
+    padding-left: 6px;
+}
+
+input[type=checkbox]{
+    accent-color:  #86C0F3;
+}
+
+#checkboxOption {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #B1B1B1;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkboxOption:checked {
+    background-color: #86C0F3;
+}
+
+#preguntaText {
+    padding-bottom: 6px;
+}
+
+@media screen and (max-width: 960px) {
+    .QFormContainer {
+        width: 90%;
+    }
+}

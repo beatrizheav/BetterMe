@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "pregunta": "Sentirse nervioso, ansioso o al límite"
+    },
+    {
+        "id": 2,
+        "pregunta": "No ser capaz de parar o controlar la preocupación"
+    }, 
+    {
+        "id": 3,
+        "pregunta": "Preocuparse demasiado sobre diferentes cosas"
+    },
+    {
+        "id": 4,
+        "pregunta": "Tener problemas para relajarse"
+    },
+    {
+        "id": 5,
+        "pregunta": "Estar tan inquieto que es difícil quedarse quieto"
+    }, 
+    {
+        "id": 6,
+        "pregunta": "Enojarse facilmente o sentirse irritable"
+    },
+    {
+        "id": 7,
+        "pregunta": "Sentir miedo como si algo horrible fuera a suceder"
+    }
+]

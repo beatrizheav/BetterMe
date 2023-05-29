@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Bold;
+  src: url(../../public/fonts/OpenSans-Bold.ttf);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #86C0F3;
+  color: white;
+  font-family: Bold;
+  font-size: 14;
+}
+
+.btn-large {
+  width: 300px;
+}
+
+.btn-short {
+  width: 150px;
+}

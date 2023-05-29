@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "pregunta": "En las últimas semanas, ¿ha deseado estar muerto? "
+    },
+    {
+        "id": 2,
+        "pregunta": "En las últimas semanas, ¿ha sentido que usted o su familia estarían mejor si estuviera muerto?"
+    }, 
+    {
+        "id": 3,
+        "pregunta": "En la última semana, ¿ha pensado en suicidarse?"
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Alguna vez ha intentado suicidarse?"
+    }
+]

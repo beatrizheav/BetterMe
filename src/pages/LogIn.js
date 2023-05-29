@@ -64,6 +64,12 @@ const LogIn = () => {
         if (ex && ex !== undefined && ex.toString && ex.toString !== undefined) {
           // print the general exception
           console.log(ex.toString(), 'ERROR 1');
+          swal( {
+            title: "Lo siento no pudimos realizar tu conexión",
+            text: "Verifica tu conexión en la red",
+            confirmButtonText: "Okay",
+            className:"swal2-popup"
+          })
         }     
         if (
           ex.response &&
@@ -82,6 +88,9 @@ const LogIn = () => {
           })
         }
       });   
+      return(
+        <h1 className="Bold25" id="cargandoMessage">Cargando...</h1>
+      )
     }
   };
 

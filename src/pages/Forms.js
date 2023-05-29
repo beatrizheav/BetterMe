@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import swal from 'sweetalert';
 
 import "./Forms.css";
 
@@ -133,17 +134,31 @@ const Forms = () => {
             },
           });
         })
-        .catch(function (error) {
-          console.log(error);
-          if (error.msg) {
-            posted = error.response.data.errors;
-            console.log("Error1", posted);
-          } else if (error.request) {
-            console.log("Error2".error);
-          } else {
-            console.log("Error3", error.message);
+        .catch((ex) => {
+          // console.log(error.message);
+          if (ex && ex !== undefined && ex.toString && ex.toString !== undefined) {
+            // print the general exception
+            console.log(ex.toString(), 'ERROR 1');
+          }     
+          if (
+            ex.response &&
+            ex.response !== undefined &&
+            ex.response.data &&
+            ex.response.data !== undefined
+          ) {
+            // print the exception message from axios response
+            console.log(ex.response.data, 'ERROR 2');
+            // swal("Lo siento este usuario no existe", "¿Aún no tienes una cuenta? Registrate!:)")
+            swal( {
+              title: "Lo siento ocurrio un error, intenta de nuevo",
+              text: ex.response.data.msg,
+              confirmButtonText: "Okay",
+            })
+            history.push({
+              pathname: "/Forms",
+            });
           }
-        });
+        });   
     } else {
     }
   };
@@ -183,7 +198,7 @@ const Forms = () => {
       ) : diagnosticoSuicidio === "" ? (
         <ModorisForm setDiagnostico={setDiagnosticoSuicidio} />
       ) : (
-        ""
+        <h1 className="Bold25" id="cargandoMessage">Cargando...</h1>
       )}
     </>
   );

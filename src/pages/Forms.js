@@ -14,7 +14,6 @@ import ModorisForm from "../components/ModorisForm";
 import NseForm from "../components/NseForm";
 
 const Forms = () => {
-  const cache = {};
   const history = useHistory();
 
   const [email, setEmail] = useState("");

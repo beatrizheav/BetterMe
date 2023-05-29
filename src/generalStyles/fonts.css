@@ -11,6 +11,10 @@
     src: url(../../public/fonts/OpenSans-Bold.ttf);
 }
 
+.Bold20 {
+    font-family: Bold;
+    font-size: 20px;
+}
 
 .Bold25 {
     font-family: Bold;
@@ -25,4 +29,9 @@
 .Regular13 {
     font-family: Regular;
     font-size: 13px;
+}
+
+.Regular15 {
+    font-family: Regular;
+    font-size: 15px;
 }

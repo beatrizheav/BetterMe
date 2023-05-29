@@ -1,0 +1,118 @@
+.navbarLog {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navbarTitleLog {
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logoLog {
+    height: 70px;
+}
+
+.titleLog {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+  
+.menu-iconLog {
+    height: 70px;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.icons-menuLog {
+    color: black;
+    font-size: 32px;
+}
+
+.profile-iconLog {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nombreMain {
+    padding-left: 30px;
+}
+
+.profileMenu {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    margin-right: 18px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    border: 1px solid #B8B6B6;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.profileIlustration {
+    height: 70px;
+}
+
+.profileText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profileName {
+    padding: 10px;
+}
+
+.profilePhone {
+    padding-Top: 50px;
+    flex-direction: row;
+}
+
+.profileDate {
+    padding-top: 50px;
+}
+
+.profileOccupation {
+    padding-top: 50px;
+}
+
+.profileLogOut {
+    padding-top: 50px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.profileLogOut:hover {
+    cursor: pointer;
+}
+
+.cerrarSesionText{
+    padding-right: 5px;
+}
+
+.phoneIcon {
+    color: #6F6A6A;
+    font-size: 15px;
+}
+
+.logOutIcon {
+    color: black;
+    font-size: 20px;
+}
+  
+@media screen and (max-width: 960px) {
+    .profileMenu {
+        width: 80%;
+        position: absolute;
+    }
+}

@@ -21,9 +21,19 @@
     font-size: 25px;
 }
 
+.SBold25 {
+    font-family: SemiBold;
+    font-size: 25px;
+}
+
 .SBold13 {
     font-family: SemiBold;
     font-size: 13px;
+}
+
+.SBold15 {
+    font-family: SemiBold;
+    font-size: 15px;
 }
 
 .Regular13 {

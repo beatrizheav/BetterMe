@@ -1,0 +1,48 @@
+#LlamadaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#CalendarContainerLlamada {
+    padding: 30px;
+}
+
+#Calendar {
+    padding-top: 15px;
+}
+
+#PsicContainerLlamada {
+    width: 30%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #B1B1B1;
+}
+
+#profilePsic {
+    height: 90px;
+}
+
+#psicLlamada {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 960px) {
+    #LlamadaContainer {
+        flex-direction: column;
+    }
+
+    #PsicContainerLlamada {
+        width: 70%;
+        margin-left: 0px
+    }
+}

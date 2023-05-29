@@ -51,7 +51,7 @@ const NavbarLog = ({
             </div>
             <div className="profileText profilePhone">
               <BsFillTelephoneFill className="phoneIcon" />
-              <label className="Regular15">{".     " + telefono}</label>
+              <label className="Regular15">{":     " + telefono}</label>
             </div>
             <div className="profileText profileDate">
               <label className="Regular13">Fecha de nacimiento:</label>

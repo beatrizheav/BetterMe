@@ -35,7 +35,7 @@ const Navbar = () => {
             alt="logoBetterMe"
           />
           <div className="title">
-            <div className="B14">BetterMe</div>
+            <div className="B14">Mentalizate al 100</div>
             <div className="L14">MentalHealth</div>
           </div>
         </div>
@@ -44,24 +44,6 @@ const Navbar = () => {
             <li>
               <Link to="/" className="nav-links R14" onClick={closeMobileMenu}>
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/aboutUs"
-                className="nav-links R14"
-                onClick={closeMobileMenu}
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/saludMental"
-                className="nav-links R14"
-                onClick={closeMobileMenu}
-              >
-                Salud Mental
               </Link>
             </li>
           </ul>

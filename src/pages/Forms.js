@@ -107,8 +107,6 @@ const Forms = () => {
       suicide: diagnosticoSuicidio,
       treatment: enfoque,
     });
-
-    console.table(data);
     
     if (enfoque !== "") {
       axios
@@ -138,7 +136,6 @@ const Forms = () => {
           });
         })
         .catch((ex) => {
-          // console.log(error.message);
           if (ex && ex !== undefined && ex.toString && ex.toString !== undefined) {
             // print the general exception
             console.log(ex.toString(), 'ERROR 1');
@@ -151,7 +148,6 @@ const Forms = () => {
           ) {
             // print the exception message from axios response
             console.log(ex.response.data, 'ERROR 2');
-            // swal("Lo siento este usuario no existe", "¿Aún no tienes una cuenta? Registrate!:)")
             swal( {
               title: "Lo siento ocurrio un error, intenta de nuevo",
               text: ex.response.data.msg,

@@ -7,7 +7,6 @@ import NavbarLog from "../components/NavbarLog";
 
 const Main = () => {
   const location = useLocation();
-  console.log(location.state.nse)
   return (
     <>
       <NavbarLog

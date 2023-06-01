@@ -7,7 +7,6 @@ import Button from "../components/Button";
 
 const FinishForm = () => {
   const location = useLocation();
-  console.log(location.state.NSE, "NSE");
 
   return (
     <>

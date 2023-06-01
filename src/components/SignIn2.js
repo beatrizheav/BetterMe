@@ -70,7 +70,7 @@ const SignIn2 = ({
               ¡Queremos saber más de ti!
             </label>
             <label className="R12">
-              Apoyanos a llenar con tu información los siguientes campos 
+              Llena los campos con la información requerida
             </label>
           </div>
           <div id="inputsContainer">

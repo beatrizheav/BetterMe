@@ -13,20 +13,19 @@ const Home = () => {
         <div id="infoContainer">
           <div className="B35 titleHome">Comienza una nueva vida hoy</div>
           <p id="paragraph">
-            ¡Bienvenido a Mentalizate al 100! Una plataforma de salud
-            psicológica gratuita en la que podrás encontrar apoyo, atención y
-            recursos para atravesar síntomas relacionados con la depresión,
-            ansiedad y el riesgo de suicidio. 
+            Bienvenido a Mentalizate al 100, una plataforma de salud mental
+            gratuita para afrontar los retos cotidianos de la vida diaria.
             <br />
             <br />
-            Este proyecto tiene como objetivo
-            brindar acceso a la atención psicológica gratuita las 24 horas del día brindando acceso a
-            recursos en línea que fomenten la psicoeducación y proporcionando el contacto
-            entre la población y los sistemas de atención directa a la salud
-            mental proporcionados por el gobierno.
+            Esta plataforma tiene como objetivo facilitar el acceso a la
+            atención psicológica las 24 horas del día a través del diagnóstico
+            oportuno, canalización mediamente un directorio de instituciones de
+            salud mental y juridícas, así como, recursos audiovisuales que
+            fomentan la educación en la salud mental.
             <br />
             <br />
-            Únetenos, juntos por una salud mental accesible e integra.
+            ¡Mentalizate al 100!, juntos por el acceso a una salud mental
+            integral y gratuita.
           </p>
           <div id="button">
             <Button text={"Inicia aquí"} type={"short"} link={"/Forms"} />

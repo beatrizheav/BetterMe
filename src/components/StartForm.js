@@ -17,10 +17,11 @@ const StartForm = ({ setStartForm }) => {
           alt="startFormIlustration"
         />
         <label id="infoStart" className="R15">
-          A continuación se mostraran a contestar tres formularios, enfocados a la
-          ansiedad, depresión y el riesgo de suicidio, es importante que los
-          contestes a conciencia para poder realizar una adecuada canalización a
-          la institución que puede proporcionarte el apoyo requerido.
+          A continuación se te mostrarán tres formularios relacionados con la
+          ansiedad, la depresión y el riesgo suicida. Es importante que los
+          contestes lo más apegado a lo que estas sintiendo para poder realizar
+          una adecuada canalización a la institución que puede proporcionarte el
+          apoyo requerido.
         </label>
         <label id="infoStart" className="R12">
           **Tus datos solo serán usados para fines de canalización y de

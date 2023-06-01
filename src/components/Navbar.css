@@ -41,24 +41,29 @@
 }
 
 .navbar {
-  height: 70px;
+  height: 100px;
   width: 100vw;
   display: flex;
   position: absolute;
   top: 0;
   justify-content: space-between;
+  /* background-color: red; */
+  border-bottom: solid;
+  border-bottom-color: #86C0F3;
+  border-bottom-width: 1;
 }
 
 .navbar-title {
   margin-left: 20px;
   height: 100%;
-  width: 200px;
+  width: 220px;
   display: flex;
   align-items: center;
 }
 
 .logo {
-  height: 70px;
+  height: 90px;
+  padding-right: 10px;
 }
 
 .title {

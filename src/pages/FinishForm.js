@@ -27,8 +27,7 @@ const FinishForm = () => {
           alt="finishFormIlustration"
         />
         <label id="infoStart" className="R16">
-          Agradecemos la confianza de contestar todos los formularios, esperamos
-          poder ayudarte y acompañarte en este proceso de la mejor manera.
+          Agradecemos tu confianza, esperamos proporcionarte la información necesaria y acompañarte en tu proceso.
         </label>
         <Button
           text={"Empezar"}

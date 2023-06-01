@@ -61,21 +61,21 @@ const ModorisForm = ({ setDiagnostico }) => {
       <label className="Bold25">ASQ-MODORIS</label>
       <div id="infoCuestionarioContainer">
         <label className="Regular13">
-          Instrumento de tamizaje para para la evaluación de la prevención del
+          Instrumento de tamizaje para la evaluación de la prevención del
           suicidio.
         </label>
         <label className="Regular13">
           El siguiente cuestionario consta de cuatro preguntas de opción
-          multiple tipo escala de clasificación.
+          múltiple tipo escala de clasificación.
         </label>
         <label className="SBold13">
           Te tomara menos de 2 minutos contestarlo
         </label>
         <label className="Regular13" id="modoris">
           La intención de este cuestionario es apoyar y brindar la mejor
-          atención posible por lo tanto es importante que conteste con
-          sinceridad a las siguientes preguntas. Su información sera tratada con
-          absoluto respeto.
+          atención posible, por lo tanto, es importante que conteste con
+          sinceridad a las siguientes preguntas. Su información será tratada con
+          absoluta confidencialidad.
         </label>
       </div>
       {modorisPreguntas.map((pregunta) => {

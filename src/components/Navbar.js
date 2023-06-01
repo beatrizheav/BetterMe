@@ -30,14 +30,10 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-title">
           <img
-            src={require("../assets/Logo.png")}
+            src={require("../assets/Logo100.png")}
             className="logo"
             alt="logoBetterMe"
           />
-          <div className="title">
-            <div className="B14">Mentalizate al 100</div>
-            <div className="L14">Salud Mental</div>
-          </div>
         </div>
         <div className={click ? "nav-menu active" : "nav-menu"}>
           <ul className={click ? "nav-pages active" : "nav-pages"}>

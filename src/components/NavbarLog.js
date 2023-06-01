@@ -21,16 +21,12 @@ const NavbarLog = ({
   return (
     <>
       <nav className="navbarLog">
-        <div className="navbarTitleLog">
+        <div className="navbar-titleLog">
           <img
-            src={require("../assets/Logo.png")}
+            src={require("../assets/Logo100.png")}
             className="logoLog"
             alt="logoBetterMe"
           />
-          <div className="titleLog">
-            <div className="B14">Mentalizate al 100</div>
-            <div className="L14">Salud Mental</div>
-          </div>
         </div>
         <div className="menu-iconLog" onClick={handleClick}>
           <IoIosMenu className="icons-menuLog" />

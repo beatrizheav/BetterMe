@@ -60,7 +60,7 @@ const SignIn = ({ setEmail, setPassword }) => {
               Crea una cuenta:)
             </label>
             <label className="R14" id="descriptionSignIn">
-              Porfavor ingresa el correo y la contraseña con los que te gustaria crear tu cuenta.
+              Ingresa el correo y la contraseña con los que te gustaria crear tu cuenta.
             </label>
           </div>
           <div id="inputs">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./FinishForm.css";
 
-import Navbar from "../components/Navbar";
+import NavbarLog from "../components/NavbarLog";
 import Button from "../components/Button";
 
 const FinishForm = () => {
@@ -10,7 +10,13 @@ const FinishForm = () => {
 
   return (
     <>
-      <Navbar />
+      <NavbarLog
+        nombre={location.state.name}
+        correo={location.state.email}
+        telefono={location.state.phone}
+        fechaNacimiento={location.state.birthDate}
+        ocupacion={location.state.occupation}
+      />
       <div id="startContainer">
         <label className="B25" id="title">
           Haz finalizado todos los cuestionarios!

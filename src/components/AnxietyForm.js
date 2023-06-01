@@ -83,6 +83,11 @@ const AnxietyForm = ({ setDiagnostico }) => {
           Te tomara menos de 2 minutos contestarlo
         </label>
       </div>
+      <div id="infoCuestionarioContainer">
+        <label className="Regular13">
+         Durante las últimas dos semanas, ¿Con que frecuencia le han molestado los siguientes problemas?
+        </label>
+      </div>
       {gad7Preguntas.map((pregunta) => {
         return (
           <QForm

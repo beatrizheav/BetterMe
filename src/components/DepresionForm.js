@@ -91,6 +91,11 @@ const DepresionForm = ({ setDiagnostico }) => {
           Te tomara menos de 2 minutos contestarlo
         </label>
       </div>
+      <div id="infoCuestionarioContainer">
+        <label className="Regular13">
+         Durante las últimas dos semanas, ¿Que tan seguido le han afectado cualquiera de los siguientes problemas?
+        </label>
+      </div>
       {phq9Preguntas.map((pregunta) => {
         return (
           <QForm

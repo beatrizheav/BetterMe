@@ -139,6 +139,14 @@ const Forms = () => {
           if (ex && ex !== undefined && ex.toString && ex.toString !== undefined) {
             // print the general exception
             console.log(ex.toString(), 'ERROR 1');
+            history.push({
+              pathname: "/Forms",
+            });
+            swal( {
+              title: "Lo siento ocurrio un error en la red",
+              text: "Revisa tu conexión a internet e intenta de nuevo",
+              confirmButtonText: "Okay",
+            })
           }     
           if (
             ex.response &&

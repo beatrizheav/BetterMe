@@ -36,7 +36,7 @@ const Navbar = () => {
           />
           <div className="title">
             <div className="B14">Mentalizate al 100</div>
-            <div className="L14">MentalHealth</div>
+            <div className="L14">Salud Mental</div>
           </div>
         </div>
         <div className={click ? "nav-menu active" : "nav-menu"}>

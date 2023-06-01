@@ -28,8 +28,8 @@ const NavbarLog = ({
             alt="logoBetterMe"
           />
           <div className="titleLog">
-            <div className="B14">BetterMe</div>
-            <div className="L14">MentalHealth</div>
+            <div className="B14">Mentalizate al 100</div>
+            <div className="L14">Salud Mental</div>
           </div>
         </div>
         <div className="menu-iconLog" onClick={handleClick}>

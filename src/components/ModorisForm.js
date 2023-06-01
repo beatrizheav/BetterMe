@@ -23,7 +23,7 @@ const ModorisForm = ({ setDiagnostico }) => {
       setDiagnostico("Riesgo Alto");
     } else if (totalModoris > 0 && totalModoris <= 2) {
       setDiagnostico("Riesgo Bajo");
-    } else if ((totalModoris === 3)) {
+    } else if (totalModoris === 3) {
       setDiagnostico("Riesgo Medio");
     } else if (totalModoris >= 4 && totalModoris <= 5) {
       setDiagnostico("Riesgo Alto");
@@ -59,6 +59,25 @@ const ModorisForm = ({ setDiagnostico }) => {
   return (
     <div className="nseContainer">
       <label className="Bold25">ASQ-MODORIS</label>
+      <div id="infoCuestionarioContainer">
+        <label className="Regular13">
+          Instrumento de tamizaje para para la evaluación de la prevención del
+          suicidio.
+        </label>
+        <label className="Regular13">
+          El siguiente cuestionario consta de cuatro preguntas de opción
+          multiple tipo escala de clasificación.
+        </label>
+        <label className="SBold13">
+          Te tomara menos de 2 minutos contestarlo
+        </label>
+        <label className="Regular13" id="modoris">
+          La intención de este cuestionario es apoyar y brindar la mejor
+          atención posible por lo tanto es importante que conteste con
+          sinceridad a las siguientes preguntas. Su información sera tratada con
+          absoluto respeto.
+        </label>
+      </div>
       {modorisPreguntas.map((pregunta) => {
         return (
           <QForm
@@ -71,7 +90,9 @@ const ModorisForm = ({ setDiagnostico }) => {
         );
       })}
       {preguntasSinContestar ? (
-        <label className="SBold13" id="camposVacios">Contesta todas las preguntas para continuar</label>
+        <label className="SBold13" id="camposVacios">
+          Contesta todas las preguntas para continuar
+        </label>
       ) : (
         ""
       )}

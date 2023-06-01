@@ -9,6 +9,7 @@ import "./Forms.css";
 import Navbar from "../components/Navbar";
 import SignIn from "../components/SignIn";
 import SignIn2 from "../components/SignIn2";
+import StartForms from '../components/StartForm'
 import AnxietyForm from "../components/AnxietyForm";
 import DepresionForm from "../components/DepresionForm";
 import ModorisForm from "../components/ModorisForm";
@@ -31,6 +32,8 @@ const Forms = () => {
   const [diagnosticoSuicidio, setDiagnosticoSuicidio] = useState("");
   const [atencion, setAtencion] = useState("");
   const [enfoque, setEnfoque] = useState("");
+
+  const [startForm, setStartForm] = useState(false)
 
   const SignInURL = "http://localhost:3001/api/v1/auth/signup";
   let posted = "";
@@ -185,6 +188,8 @@ const Forms = () => {
           setFechaNacimiento={setFechaNacimiento}
           setOcupacion={setOcupacion}
         />
+      ) : startForm === false ? (
+        <StartForms setStartForm={()=> setStartForm(true)}/>
       ) : nse === "" ? (
         <NseForm
           setDiagnostico={setNse}

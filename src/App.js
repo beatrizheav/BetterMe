@@ -3,7 +3,6 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import LogIn from "./pages/LogIn";
-import StartForm from "./pages/StartForm";
 import Forms from "./pages/Forms";
 import FinishForm from "./pages/FinishForm";
 import Main from "./pages/Main";
@@ -15,7 +14,6 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/LogIn" exact component={LogIn}/>
-          <Route path="/StartForm" exact component={StartForm} />
           <Route path="/Forms" exact component={Forms} />
           <Route path="/FinishForm" exact component={FinishForm} />
           <Route path="/Main" exact component={Main} />

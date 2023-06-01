@@ -77,6 +77,20 @@ const DepresionForm = ({ setDiagnostico }) => {
   return (
     <div className="nseContainer">
       <label className="Bold25">PHQ-9</label>
+      <div id="infoCuestionarioContainer">
+        <label className="Regular13">
+         Instrumento de tamizaje para evaluar la severidad de la depresión en atención primaria.
+        </label>
+        <label className="Regular13">
+         Validado con un Alfa de Cronbach de 0,835
+        </label>
+        <label className="Regular13">
+        Consta de nueve preguntas de opción multiple de tipo escala de clasificación 
+        </label>
+        <label className="SBold13">
+          Te tomara menos de 2 minutos contestarlo
+        </label>
+      </div>
       {phq9Preguntas.map((pregunta) => {
         return (
           <QForm

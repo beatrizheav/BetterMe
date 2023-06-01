@@ -7,7 +7,7 @@ import Button from "../components/Button";
 
 const FinishForm = () => {
   const location = useLocation();
-  console.log(location.state.treatment, "PATH ROUTES");
+  console.log(location.state.NSE, "NSE");
 
   return (
     <>
@@ -21,28 +21,28 @@ const FinishForm = () => {
           id="startImage"
           alt="finishFormIlustration"
         />
-        <label id="infoStart" className="R15">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque
-          ex, semper non felis vitae, volutpat egestas nibh. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.{" "}
+        <label id="infoStart" className="R16">
+          Agradecemos la confianza de contestar todos los formularios, esperamos
+          poder ayudarte y acompañarte en este proceso de la mejor manera.
         </label>
         <Button
           text={"Empezar"}
           type={"short"}
           link={{
             pathname: "/Main",
-            state: { 
+            state: {
               email: location.state.email,
               password: location.state.password,
               name: location.state.name,
               phone: location.state.phone,
               birthDate: location.state.birthDate,
               occupation: location.state.occupation,
-              NSE: location.state.nse,
+              nse: location.state.NSE,
               anxiety: location.state.anxiety,
               depresion: location.state.depresion,
               suicide: location.state.suicide,
-              treatment: location.state.treatment },
+              treatment: location.state.treatment,
+            },
           }}
         />
       </div>

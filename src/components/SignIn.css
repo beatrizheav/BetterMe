@@ -55,6 +55,10 @@
     flex-direction: column;
 }
 
+#descriptionSignIn {
+    text-align: center;
+}
+
 .signIn2 {
     width: 60%;
     height: 340px;

@@ -67,10 +67,10 @@ const SignIn2 = ({
         <div className="signInContainer signIn2">
           <div id="texts">
             <label className="SB25" id="title">
-              Queremos saber más de ti!
+              ¡Queremos saber más de ti!
             </label>
             <label className="R12">
-              Apoyanos a llenar los siguientes campos ;)
+              Apoyanos a llenar con tu información los siguientes campos 
             </label>
           </div>
           <div id="inputsContainer">

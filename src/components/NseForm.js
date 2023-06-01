@@ -39,11 +39,7 @@ const NseForm = ({ setDiagnostico, traslado, setTraslado, setInternet }) => {
 
   const sumarScore = () => {
     setTotalNse(
-      scoreNse[1] +
-        scoreNse[2] +
-        scoreNse[3] +
-        scoreNse[4] +
-        scoreNse[5] 
+      scoreNse[1] + scoreNse[2] + scoreNse[3] + scoreNse[4] + scoreNse[5]
     );
   };
 
@@ -53,12 +49,12 @@ const NseForm = ({ setDiagnostico, traslado, setTraslado, setInternet }) => {
 
   const sumarNse = () => {
     if (
-        scoreNse[1] === undefined ||
-        scoreNse[2] === undefined ||
-        scoreNse[3] === undefined ||
-        scoreNse[4] === undefined ||
-        scoreNse[5] === undefined ||
-        traslado === ''
+      scoreNse[1] === undefined ||
+      scoreNse[2] === undefined ||
+      scoreNse[3] === undefined ||
+      scoreNse[4] === undefined ||
+      scoreNse[5] === undefined ||
+      traslado === ""
     ) {
       setPreguntasSinContestar(true);
     } else {
@@ -70,6 +66,18 @@ const NseForm = ({ setDiagnostico, traslado, setTraslado, setInternet }) => {
   return (
     <div className="nseContainer">
       <label className="Bold25">Nivel Socieconomico</label>
+      <div id="infoCuestionarioContainer">
+        <label className="Regular13">
+          Herramienta de evaluación socioeconomica AMAI 2022
+        </label>
+        <label className="Regular13">
+          El siguiente cuestionario consta de 6 preguntas de opción multiples
+          tipo escala descriptiva
+        </label>
+        <label className="SBold13">
+          Te tomara menos de 2 minutos contestarlo
+        </label>
+      </div>
       {nseData.map((pregunta) => {
         return (
           <QForm

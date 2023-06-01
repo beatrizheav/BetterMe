@@ -69,6 +69,20 @@ const AnxietyForm = ({ setDiagnostico }) => {
   return (
     <div className="nseContainer">
       <label className="Bold25">GAD-7</label>
+      <div id="infoCuestionarioContainer">
+        <label className="Regular13">
+         Instrumento de tamizaje para evaluar la escala de ansiedad generalizada.
+        </label>
+        <label className="Regular13">
+         Validado con un Alfa de Cronbach = 0,92
+        </label>
+        <label className="Regular13">
+          El siguiente cuestionario consta de siete preguntas de opción multiple de tipo escala de clasificación
+        </label>
+        <label className="SBold13">
+          Te tomara menos de 2 minutos contestarlo
+        </label>
+      </div>
       {gad7Preguntas.map((pregunta) => {
         return (
           <QForm

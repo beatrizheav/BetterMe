@@ -13,3 +13,24 @@
 #camposVacios {
     color: #FF6584;
 }
+
+#infoCuestionarioContainer {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 12px;
+}
+
+#modoris {
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 12px;
+}
+
+@media screen and (max-width: 960px) {
+    #modoris {
+        padding-right: 0%;
+        padding-left: 0%;
+        padding-top: 12px;
+    }
+}
